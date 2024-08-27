@@ -59,9 +59,9 @@ export default function MobileMenu() {
           navShow ? "translate-x-0 rounded-none" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between mt-6 px-8">
+        <div className="flex items-center justify-between  px-8">
           <Link href="/" onClick={onToggleNav}>
-            <Image src={Logo} width={35} height={35} alt="logo" />
+            <Image src={Logo} width={105} height={35} alt="logo" className="dark:invert"/>
           </Link>
 
           <button
