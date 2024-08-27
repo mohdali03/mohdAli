@@ -6,6 +6,7 @@ import { incognito } from "./assets/font/font";
 import { gitlabmono } from "./assets/font/font";
 import Navbar from "./components/global/Navbar";
 import Footer from "./components/global/Footer";
+import web from "./mohdAliPortFolio.png"
 import { Providers } from "./providers";
 
 const inter = Inter({
@@ -20,7 +21,7 @@ const options = {
     "Mohd Ali is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
   url: process.env.NEXT_PUBLIC_URL,
   ogImage:
-    "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
+    web,
 };
 
 export const metadata: Metadata = {
