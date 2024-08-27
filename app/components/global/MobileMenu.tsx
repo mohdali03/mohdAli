@@ -11,7 +11,7 @@ import {
   HiUser,
   HiUserAdd
 } from "react-icons/hi";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/mainlogo.png";
 
 export default function MobileMenu() {
   const [navShow, setNavShow] = useState(false);
