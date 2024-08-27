@@ -10,7 +10,7 @@ import {
   HiOutlineX,
   HiUser,
 } from "react-icons/hi";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/mainlogo.png";
 
 export default function MobileMenu() {
   const [navShow, setNavShow] = useState(false);
@@ -26,15 +26,9 @@ export default function MobileMenu() {
       icon: HiBeaker,
     },
     {
-      title: "Blog",
-      href: "/blog",
-      icon: HiBookmarkAlt,
-    },
-    {
-      title: "Photos",
-      href: "/photos",
-      icon: HiCamera,
-    },
+      title: "Experience",
+      href: "#WExperience"
+    }
   ];
 
   const onToggleNav = () => {

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: options.title,
     url: options.url,
     siteName: process.env.NEXT_PUBLIC_URL,
-    locale: "en-US",
+    locale: "India",
     type: "website",
     description: options.description,
     images: options.ogImage,
