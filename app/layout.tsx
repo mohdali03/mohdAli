@@ -20,8 +20,9 @@ const options = {
   description:
     "Mohd Ali is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
   url: process.env.NEXT_PUBLIC_URL,
-  ogImage:
-    web,
+  ogImage: {
+    url: web.src,
+  },
 };
 
 export const metadata: Metadata = {

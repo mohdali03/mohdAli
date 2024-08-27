@@ -9,8 +9,9 @@ import {
   HiCamera,
   HiOutlineX,
   HiUser,
+  HiUserAdd
 } from "react-icons/hi";
-import Logo from "../../../public/mainlogo.png";
+import Logo from "../../../public/logo.png";
 
 export default function MobileMenu() {
   const [navShow, setNavShow] = useState(false);
@@ -27,8 +28,10 @@ export default function MobileMenu() {
     },
     {
       title: "Experience",
-      href: "#WExperience"
-    }
+      href: "#WExperience",
+      icon: HiUserAdd,
+    },
+    
   ];
 
   const onToggleNav = () => {
