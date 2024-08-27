@@ -7,7 +7,7 @@ import { BiSolidTime, BiTime } from "react-icons/bi";
 import { formatDate } from "../../utils/date";
 import { HiCalendar } from "react-icons/hi";
 import { sanityFetch } from "@/lib/sanity.client";
-import { readTime } from "../app/utils/readTime";
+import { readTime } from "@/app/utils/readTime";
 import { toPlainText } from "@portabletext/react";
 
 const fallbackImage: string =

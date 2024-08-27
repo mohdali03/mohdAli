@@ -1,4 +1,4 @@
-import { Slide } from "../app/animation/Slide";
+import { Slide } from "@/app/animation/Slide";
 
 type HeadingType = {
   title: string;

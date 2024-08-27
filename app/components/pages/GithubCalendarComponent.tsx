@@ -1,5 +1,5 @@
 import ContributionGraph from "./ContributionGraph";
-import { Slide } from "../app/animation/Slide";
+import { Slide } from "@/app/animation/Slide";
 
 export default function GithubCalendarComponent() {
   return (

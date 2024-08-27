@@ -1,10 +1,10 @@
 "use client";
 import { useTheme } from "next-themes";
 import GitHubCalendar from "react-github-calendar";
-import { espionage, github } from "../app/data/contribution-graph-theme";
+import { espionage, github } from "@/app/data/contribution-graph-theme";
 import { useState, useEffect } from "react";
 import YearButton from "../shared/YearButton";
-import { getGitHubYears } from "../app/utils/calculate-years";
+import { getGitHubYears } from "@/app/utils/calculate-years";
 import EmptyState from "../shared/EmptyState";
 
 export default function ContributionGraph() {

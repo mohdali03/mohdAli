@@ -1,9 +1,9 @@
 <div align="center">
-<a href="https://victoreke.com"><img src="./public/logo.png" width="60px"></a>
+<a href=process.env.NEXT_PUBLIC_URL><img src="./public/logo.png" width="60px"></a>
 </div>
 
 <div align="center">
-<h1>victoreke.com</h1>
+<h1>Ali PortFolio</h1>
 <p>My personal portfolio website</p>
 </div>
 
@@ -30,9 +30,9 @@ Follow this guide to get this site runnning locally:
 ### Clone Repository
 
 ```js
-git clone https://github.com/Evavic44/victoreke.com.git
+git clone https://github.com/Evavic44/Ali PortFolio.git
 
-cd victoreke.com
+cd Ali PortFolio
 
 npm install
 ```
@@ -84,9 +84,9 @@ Open up the cloned repository and do the following:
 > [!Warning]
 > If you don't want to use a token, comment it out in the [env.api.ts][env-api] file or else it will throw errors.
 
-- Now run `npm run dev` and you can visit [http://localhost:3000][localhost] to see the project live.
+- Now run `npm run dev` and you can visit [NEXT_PUBLIC_URL][localhost] to see the project live.
 
-By default the UI will be blank. To start adding data to the site, visit your studio at [http://localhost:3000/studio][localhost-studio] to create your own documents.
+By default the UI will be blank. To start adding data to the site, visit your studio at [NEXT_PUBLIC_URLstudio][localhost-studio] to create your own documents.
 
 If you expereinced any issues or enquiries, please raise an issue to discuss it.
 
@@ -111,7 +111,7 @@ npm run build
 | [`sanity.query.ts`](./lib/sanity.query.ts)     | Groq query for Sanity Schema data               |
 
 ## License & Usage
-This portfolio is MIT-licensed so you are free to use it as an inspiration or you can just copy the whole thing (excluding my personal content of course), I don't really mind. Just make sure you link back to [victoreke.com][site] on the footer section as attribution to the original source.
+This portfolio is MIT-licensed so you are free to use it as an inspiration or you can just copy the whole thing (excluding my personal content of course), I don't really mind. Just make sure you link back to [Ali PortFolio][site] on the footer section as attribution to the original source.
 
 <!-- Link Refs -->
 
@@ -123,13 +123,13 @@ This portfolio is MIT-licensed so you are free to use it as an inspiration or yo
 [planetscale]: https://planetscale.com/
 [nexttheme]: https://github.com/pacocoursey/next-themes
 [reactrefractor]: https://github.com/rexxars/react-refractor
-[site]: https://victoreke.com
-[studio]: https://victoreke.com/studio
-[studio-preview]: https://github.com/Evavic44/victoreke.com/assets/62628408/a2574479-a352-4437-ba67-14bd976e48eb
-[site-preview]: https://github.com/Evavic44/victoreke.com/assets/62628408/e84ac72f-1ba1-4c46-bfc0-2512ffa0e5fa
-[env-example]: https://github.com/Evavic44/victoreke.com/blob/main/.env.example
-[localhost]: http://localhost:3000
-[localhost-studio]: http://localhost:3000/studio
-[env-api]: https://github.com/Evavic44/victoreke.com/blob/main/lib/env.api.ts
+[site]: NEXT_PUBLIC_URL
+[studio]: NEXT_PUBLIC_URL/studio
+[studio-preview]: https://github.com/Evavic44/Ali PortFolio/assets/62628408/a2574479-a352-4437-ba67-14bd976e48eb
+[site-preview]: https://github.com/Evavic44/Ali PortFolio/assets/62628408/e84ac72f-1ba1-4c46-bfc0-2512ffa0e5fa
+[env-example]: https://github.com/Evavic44/Ali PortFolio/blob/main/.env.example
+[localhost]: NEXT_PUBLIC_URL
+[localhost-studio]: NEXT_PUBLIC_URLstudio
+[env-api]: https://github.com/Evavic44/Ali PortFolio/blob/main/lib/env.api.ts
 [sanity-manage]: https://sanity.io/manage
 [sanity-guide]: https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-sanity-and-nextjs

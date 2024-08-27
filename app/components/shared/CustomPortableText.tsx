@@ -3,7 +3,7 @@ import { BiLinkExternal, BiSolidQuoteRight } from "react-icons/bi";
 import PortableImage from "./PortableImage";
 import CodeBlock from "./CodeBlock";
 import HashScroll from "./HashScroll";
-import getYoutubeId from "../app/utils/get-youtubeId";
+import getYoutubeId from "@/app/utils/get-youtubeId";
 import YoutubeIframe from "./YoutubeIframe";
 import RefLink from "./RefLink";
 import Table from "./Table";

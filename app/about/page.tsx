@@ -12,13 +12,13 @@ import { sanityFetch } from "@/lib/sanity.client";
 import RefLink from "../components/shared/RefLink";
 
 export const metadata: Metadata = {
-  title: "About | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/about"),
+  title: "About | Mohd Ali",
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_URL}/about`),
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
-    title: "About | Victor Eke",
-    url: "https://victoreke.com/about",
+    title: "About | Mohd Ali",
+    url: `${process.env.NEXT_PUBLIC_URL}/about`,
     description:
       "Learn more about my skills, experience and technical background",
     images:
@@ -72,13 +72,13 @@ export default async function About() {
                     <div className="flex flex-col text-center gap-y-4">
                       <div className="flex items-center gap-x-3">
                         <RefLink
-                          href="https://www.craft.me/s/WQpQF3jrPIodXp"
+                          href="https://drive.google.com/file/d/1FGosHRhAAmSNKhsoCSF_IRSSQqt1_NSy/view?usp=drive_link"
                           className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
                         >
-                          View Résumé <BiLinkExternal className="text-base" />
+                          View Resume <BiLinkExternal className="text-base" />
                         </RefLink>
                         <a
-                          href={`${data.resumeURL}?dl=${data.fullName}-resume`}
+                          href={'https://drive.google.com/uc?export=download&id=1FGosHRhAAmSNKhsoCSF_IRSSQqt1_NSy'} 
                           className="flex items-center justify-center text-center dark:text-primary-color text-secondary-color hover:underline basis-[10%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-3 text-lg"
                           title="Download Resume"
                         >

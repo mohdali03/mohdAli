@@ -1,4 +1,5 @@
 import { BiBriefcase } from "react-icons/bi";
+import { defineField } from "sanity";
 
 const job = {
   name: "job",
@@ -28,13 +29,13 @@ const job = {
       title: "Company Website",
       type: "url",
     },
-    {
+    
+    defineField({
       name: "description",
       title: "Job Description",
-      type: "text",
-      rows: 3,
-      description: "Write a brief description about this role",
-    },
+      type: "blockContent",
+      validation: (rule) => rule.required(),
+    }),
     {
       name: "startDate",
       title: "Start Date",

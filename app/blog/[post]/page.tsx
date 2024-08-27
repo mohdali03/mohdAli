@@ -12,12 +12,12 @@ import SharePost from "../../components/shared/SharePost";
 import FeaturedPosts from "../../components/pages/FeaturedPosts";
 import { Slide } from "../../animation/Slide";
 import { urlFor } from "@/lib/sanity.image";
-import Buymeacoffee from "../app/components/shared/Buymeacoffee";
-import Comments from "../app/components/shared/Comments";
+import Buymeacoffee from "@/app/components/shared/Buymeacoffee";
+import Comments from "@/app/components/shared/Comments";
 import { HiCalendar, HiChat } from "react-icons/hi";
 import { sanityFetch } from "@/lib/sanity.client";
-import { readTime } from "../app/utils/readTime";
-import PageHeading from "../app/components/shared/PageHeading";
+import { readTime } from "@/app/utils/readTime";
+import PageHeading from "@/app/components/shared/PageHeading";
 
 type Props = {
   params: {
@@ -43,23 +43,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${post.title}`,
-    metadataBase: new URL(`https://victoreke.com/blog/${post.slug}`),
+    metadataBase: new URL(`NEXT_PUBLIC_URL/blog/${post.slug}`),
     description: post.description,
     publisher: post.author.name,
     keywords: post.tags,
     alternates: {
       canonical:
-        post.canonicalLink || `https://victoreke.com/blog/${post.slug}`,
+        post.canonicalLink || `NEXT_PUBLIC_URL/blog/${post.slug}`,
     },
     openGraph: {
       images:
         urlFor(post.coverImage?.image).width(1200).height(630).url() ||
         fallbackImage,
-      url: `https://victoreke.com/blog/${post.slug}`,
+      url: `NEXT_PUBLIC_URL/blog/${post.slug}`,
       title: post.title,
       description: post.description,
       type: "article",
-      siteName: "victoreke.com",
+      siteName: "Ali PortFolio",
       authors: post.author.name,
       tags: post.tags,
       publishedTime: post._createdAt,

@@ -33,12 +33,12 @@ export const apiVersion =
 //   "NEXT_PUBLIC_GISCUS_CATEGORYID",
 //   "https://giscus.app/"
 // );
-
 export const umamiSiteId = checkValue(
   "3k4YHJNX0BjMxWAVvkog0xxqRogjmUBw",
   "NEXT_PUBLIC_UMAMI_WEBSITE_ID",
   "https://umami.is"
 );
+
 
 // Validate env varaibles
 function checkValue<T>(

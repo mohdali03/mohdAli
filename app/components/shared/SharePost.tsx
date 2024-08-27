@@ -14,7 +14,7 @@ type props = {
 };
 
 export default function SharePost({ title, slug, description }: props) {
-  const blog = encodeURIComponent("https://victoreke.com/blog/");
+  const blog = encodeURIComponent(`${process.env.NEXT_PUBLIC_URL}/blog/`);
   const options = [
     {
       icon: BiLogoTwitter,
@@ -37,7 +37,7 @@ export default function SharePost({ title, slug, description }: props) {
       icon: BiLogoWhatsapp,
       name: "WhatsApp",
       shareUrl: `https://api.whatsapp.com/send?text=${encodeURIComponent(
-        "Read this amazing article by Victor Eke"
+        "Read this amazing article by Mohd Ali"
       )}.%0A%0A${title}%0A%0A${blog}${slug}`,
     },
   ];

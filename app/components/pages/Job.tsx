@@ -5,6 +5,8 @@ import { formatDate } from "../../utils/date";
 import { Slide } from "../../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
 import RefLink from "../shared/RefLink";
+import { PortableText } from "@portabletext/react";
+import { CustomPortableText } from "../shared/CustomPortableText";
 
 export default async function Job() {
   const job: JobType[] = await sanityFetch({
@@ -16,7 +18,7 @@ export default async function Job() {
     <section className="mt-32">
       <Slide delay={0.16}>
         <div className="mb-16">
-          <h2 className="font-incognito text-4xl mb-4 font-bold tracking-tight">
+          <h2 className="font-incognito text-4xl mb-4 font-bold tracking-tight" id="WExperience">
             Work Experience
           </h2>
         </div>
@@ -24,7 +26,7 @@ export default async function Job() {
 
       <Slide delay={0.18}>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-12 gap-y-10">
-          {job.map((data) => (
+          {job && job.map((data) => (
             <div
               key={data._id}
               className="flex items-start lg:gap-x-6 gap-x-4 max-w-2xl relative before:absolute before:bottom-0 before:top-[5rem] before:left-9 before:w-[1px] before:h-[calc(100%-70px)] dark:before:bg-zinc-800 before:bg-zinc-200"
@@ -54,9 +56,12 @@ export default async function Job() {
                     </span>
                   )}
                 </time>
-                <p className="tracking-tight dark:text-zinc-400 text-zinc-600 my-4">
-                  {data.description}
-                </p>
+                <div className="dark:text-zinc-400 text-zinc-600 leading-relaxed">
+                  <PortableText
+                    value={data.description}
+                    components={CustomPortableText}
+                  />
+                </div>
               </div>
             </div>
           ))}

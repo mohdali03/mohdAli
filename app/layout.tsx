@@ -1,4 +1,4 @@
-import "../app/styles/globals.css";
+import "@/app/styles/globals.css";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -15,22 +15,22 @@ const inter = Inter({
 });
 
 const options = {
-  title: "Victor Eke | Software Developer",
+  title: "Mohd Ali | Software Developer",
   description:
-    "Victor Eke is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
-  url: "https://victoreke.com",
+    "Mohd Ali is a Software Developer and Technical Writer who is passionate about building solutions and contributing to open source communities",
+  url: process.env.NEXT_PUBLIC_URL,
   ogImage:
     "https://res.cloudinary.com/victoreke/image/upload/v1692635746/victoreke/og.png",
 };
 
 export const metadata: Metadata = {
   title: options.title,
-  metadataBase: new URL(options.url),
+  metadataBase: options.url ? new URL(options.url) : null,
   description: options.description,
   openGraph: {
     title: options.title,
     url: options.url,
-    siteName: "victoreke.com",
+    siteName: process.env.NEXT_PUBLIC_URL,
     locale: "en-US",
     type: "website",
     description: options.description,

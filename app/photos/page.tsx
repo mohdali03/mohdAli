@@ -1,7 +1,7 @@
 import { Slide } from "../animation/Slide";
 import Image from "next/image";
 import { Metadata } from "next";
-import PageHeading from "../app/components/shared/PageHeading";
+import PageHeading from "@/app/components/shared/PageHeading";
 
 const images = [
   {
@@ -19,13 +19,13 @@ const images = [
 ];
 
 export const metadata: Metadata = {
-  title: "Photos | Victor Eke",
-  metadataBase: new URL("https://victoreke.com/photos"),
-  description: "Explore photos taken by Victor Eke",
+  title: "Photos | Mohd Ali",
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_URL}/photos`),
+  description: "Explore photos taken by Mohd Ali",
   openGraph: {
-    title: "Photos | Victor Eke",
-    url: "https://victoreke.com/photos",
-    description: "Explore photos taken by Victor Eke",
+    title: "Photos | Mohd Ali",
+    url: `${process.env.NEXT_PUBLIC_URL}/photos`,
+    description: "Explore photos taken by Mohd Ali",
     images:
       "https://res.cloudinary.com/victoreke/image/upload/v1692635149/victoreke/photos.png",
   },

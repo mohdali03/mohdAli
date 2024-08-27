@@ -41,7 +41,7 @@ export type JobType = {
   jobTitle: string;
   logo: string;
   url: string;
-  description: string;
+  description: PortableTextBlock[];
   startDate: string;
   endDate: string;
 };
