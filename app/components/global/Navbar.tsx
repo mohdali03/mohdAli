@@ -18,7 +18,7 @@ export default function Navbar() {
     },
     {
       title: "Experience",
-      href: "#WExperience"
+      href: "/#WExperience"
     }
     // {
     //   title: "Blog",

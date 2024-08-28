@@ -28,7 +28,7 @@ export default function MobileMenu() {
     },
     {
       title: "Experience",
-      href: "#WExperience",
+      href: "/#WExperience",
       icon: HiUserAdd,
     },
     
